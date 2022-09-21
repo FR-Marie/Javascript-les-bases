@@ -322,6 +322,8 @@ function addTask() {
             taskLI.style.color = "blue"
             btnInProgress.style.display = "none"
             btnStopProgress.style.display = "inline"
+            message.innerHTML = "(" + time + "): " + "Tâche commencée: " + toDoAdding;
+            message.style.color = "whitesmoke";
         })
         btnStopProgress.addEventListener('click', (e)=>{
             e.preventDefault();
@@ -329,6 +331,8 @@ function addTask() {
             taskLI.style.color = "white"
             btnInProgress.style.display = "inline"
             btnStopProgress.style.display = "none"
+            message.innerHTML = "(" + time + "): " + "Progression stopée/annulée: " + toDoAdding;
+            message.style.color = "whitesmoke";
         })
 
 
