@@ -1,0 +1,237 @@
+/*******COULEURS*******/
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(148, 187, 233);
+  background: linear-gradient(90deg, rgb(34, 193, 195) 0%, #e4e870, rgb(34, 193, 195) 100%);
+}
+
+/*******POLICES*******/
+/*******TITRES*******/
+h1 {
+  font-size: 60px;
+  background: -webkit-linear-gradient(#999999, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 0px #e4e870;
+  -webkit-text-stroke: 0.5px #999999;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  background: -webkit-repeating-radial-gradient(#999999, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 0px black;
+  -webkit-text-stroke: 0.5px white;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
+}
+
+/******** HOVER DES BTNs********/
+#btnJeu:hover {
+  color: whitesmoke !important;
+}
+
+#Btn-incrementer:hover {
+  color: whitesmoke !important;
+}
+
+#Btn-decrementer:hover {
+  color: whitesmoke !important;
+}
+
+.inputCheck:hover {
+  color: whitesmoke !important;
+}
+
+/***********PILE OU FACE***********/
+#btnPileFace {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#btnPileFace:hover {
+  color: whitesmoke !important;
+}
+
+/********* ANIMATION ICONE **************/
+#balanceIcon, #balanceIconDroite, #balanceIconGauche {
+  font-size: 200px;
+  background: -webkit-linear-gradient(top, #e4e870 35%, #45c2b3 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-text-stroke: 0.5px white;
+}
+
+/********************* ANIMATION TITRE ***************/
+#titre-anime {
+  height: 400px;
+}
+
+h3 {
+  line-height: 0px;
+  font-size: 40px;
+  font-family: Impact, serif;
+  background: -webkit-linear-gradient(top, #e4e870 0%, #45c2b3 100%);
+  -webkit-text-stroke: 0.5px white;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: line-height 0.3s ease-in-out;
+}
+
+.h3-deploy {
+  line-height: 40px;
+}
+
+.goodbye {
+  display: none;
+}
+
+#col-title-animated {
+  height: 450px;
+}
+
+/********* LOADER PUIS IMAGE **************/
+#loader-et-image {
+  height: 200px;
+}
+
+#displayContent {
+  display: none;
+  text-align: center;
+}
+
+#loadingAnimation {
+  display: none;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #45c2b3;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#btnRefresh {
+  display: none;
+}
+
+/************** TO DO LIST **************/
+ul li {
+  margin-top: 5px;
+  list-style-type: none;
+  margin-left: 12px;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid white;
+  width: 90%;
+  padding: 10px 5px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(106, 209, 210) 0%, rgb(246, 229, 193) 100%);
+  font-size: 16px;
+}
+
+ul li:hover {
+  border: 1px solid #45c2b3;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(246, 229, 193) 0%, rgb(106, 209, 210) 100%);
+}
+
+#toDoInput {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(106, 209, 210) 0%, rgb(246, 229, 193) 100%);
+  color: whitesmoke;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+}
+
+#toDoInput::placeholder {
+  color: #999999;
+}
+
+.header {
+  width: 90%;
+  padding: 15px;
+  background-color: #e4e870;
+  color: white;
+  text-align: center;
+}
+
+.addBtn {
+  width: 25%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.btnDelete {
+  color: orangered;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.liItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnCheck {
+  color: #45c2b3;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btnUncheck {
+  display: none;
+  color: #45c2b3;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btnConfirmDelete {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 50px;
+}
+
+.btnInProgress {
+  color: gold;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.btnStopProgress {
+  display: none;
+  color: gold;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.5px white;
+}
+
+/*# sourceMappingURL=style.css.map */
